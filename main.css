@@ -1,0 +1,302 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+body {
+  background: white(18, 18, 185);
+  background: radial-gradient(
+    circle,
+    #c7b198 26%,
+    #596e79 71%,
+  );
+  color: rgb(109, 102, 102);
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 30px;
+  font: weight 900px;
+  text-decoration:none;
+}
+.none {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+.cat {
+  height: 300px;
+  width: 400px;
+  background-color: #f0ece2; ;
+  border:  #343434 8px solid;
+  box-shadow: 9px 10px 10px;
+  justify-content: center;
+}
+
+div {
+margin-top: 100px;
+margin-bottom: 100px;
+margin-right: 150px;
+margin-left: 80;
+}
+
+
+.wow {
+    height: 300px;
+    width: 400px;
+    background-color: #f0ece2;
+    border: #343434 8px solid;
+    box-shadow: 7px 9px 9px;
+    justify-content: center;
+}
+
+.box {
+  float: left;
+  width: 200px;
+  margin-left: 10px;
+  margin-top: 10px;
+  padding: 5px;
+  border: 2px solid #52575d; 
+}
+
+.bigflex {
+  display: flex;
+  border: #f0ece2;
+  height: 300px;
+  width: 400px;
+  background-color:#c7b198;
+  border: 7px  #343434 solid;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  box-shadow: 7px 9px 9px;
+}
+
+
+.bigflex2 {
+  display: flex;
+  border:  #f0ece2; 
+  height: 300px;
+  width: 300px;
+  background-color: #f0ece2; 
+  border: 7px   #343434 solid;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  box-shadow: 7px 9px 9px;
+}
+
+.bigflex3{
+  display: flex;
+  border:  #f0ece2; 
+  height: 215px;
+  width: 860px;
+  background-color: #f0ece2; 
+  border: 7px  #343434 solid;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  box-shadow: 9px 10px 10px;
+  flex-direction: row;
+}
+
+.bigflex4{
+  display: flex;
+  border :  #f0ece2; 
+  height: 215px;
+  width: 260px;
+  background-color:  #f0ece2; 
+  border: 7px  #343434 solid;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  box-shadow: 9px 10px 10px;
+}
+
+.bigflex5{
+  display: flex;
+  border :  #f0ece2; 
+  height: 215px;
+  width: 200px;
+  background-color:  #f0ece2; 
+  border: 7px  #343434 solid;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  box-shadow: 9px 10px 10px;
+}
+
+a:hover {
+  background: white;
+}
+
+ .monkey {
+  list-style: none;
+}
+.verse {
+  line-height: 2;
+  margin: auto;
+  margin-bottom: 2;
+} 
+
+
+.cirlcle {
+  height: 90px;
+  width: 90px;
+  margin: auto;
+  margin-left: 7rem;
+  border-radius: 50%;
+  background: conic-gradient skyblue;
+  border: black 1px solid;
+  animation: rotate-circle infinite 2s linear;
+
+}
+
+ .circle_jr{
+  height: 10px;
+  width: 10px;
+  margin: 0rem;
+  border-radius: 50%;
+  background: white;
+  border: black 1px solid;
+  animation:bubble infinite 1s linear;
+  animation-delay:cale(0.1s* var(--i))
+ }
+
+
+.jr {
+  display: flex;
+  transform: translateX(-110%);
+  z-index: 0;
+}
+
+.light {
+  height: 16px;
+   width: 16px;
+  color: rgb(243, 242, 242);
+  display: flex;
+  position: relative;
+  animation: blink 2s infinite linear;
+}
+
+@keyframes rotate-circle {
+  from{
+    rotate: 360deg;
+  }
+  to{
+    rotate: 0deg;
+  }
+}
+
+@keyframes move-right {
+  from{
+    transform: translateX(0px);
+    opacity: 1;
+    scale: 2;
+  }
+  to {
+    transform: translateX(500px);
+    opacity: 0.5;
+    scale: .5;
+  }
+}
+
+@keyframes blink {
+  60% {
+    opacity:0;
+  }
+}
+
+body {
+  background-color:#596e79
+}
+@media screen and (min-width:1025px) {
+  body {
+    background-color:  #c7b198;
+  }
+}
+ 
+#main {
+  width: 400px;
+  height: 100px;
+  border: 1px solid #c3c3c3;
+  display: flex;
+  justify-content: center;
+}
+
+#main div {
+  width: 70px;
+  height: 70px;
+}
+
+nav{
+  display: flex;
+  position: relative;
+  justify-content: center;
+}
+ul{
+  display: flex;
+  flex-direction: column; 
+  position: relative;
+  justify-content: center;
+}
+
+li {
+  list-style-type:none;
+}
+
+.center {
+  text-align: center;
+  justify-content: center;
+}
+
+.polygon {
+  display: flex;
+  position: relative;
+  clip-path: polygon(50% 0%,
+  61% 35%,
+  98% 35%,
+  68% 57%,
+  79% 91%,
+  50% 70%,
+  21% 91%,
+  32% 57%,
+  2% 35%,
+  39% 35%);
+  background: repeating linear gradient(rgb(104, 141, 104));
+ height: 100px;
+  width: 100px;
+  margin :auto;
+}
+
+.polygon_blink {
+  display: flex;
+  position: relative;
+  clip-path: polygon(50% 0%,
+  61% 35%,
+  98% 35%,
+  68% 57%,
+  79% 91%,
+  50% 70%,
+  21% 91%,
+  32% 57%,
+  2% 35%,
+  39% 35%);
+  background: repeating linear gradient(rgb(104, 141, 104));
+ height: 100px;
+  width: 100px;
+  animation: polygon 1s linear infinite;
+}
+
+@keyframes polygon {
+  from {
+    rotate: 0deg;
+    opacity: 1;
+  }
+
+    to {
+      rotate: 360deg;
+      opacity: 0;
+    }
+}
+
+.ponytail {
+  display: flex;
+  transform: translateY(-40%);
+
+}
+
+#one {
+  background-color: light rgb(207, 200, 207);
+  color: white;
+}
